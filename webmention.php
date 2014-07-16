@@ -339,7 +339,7 @@ class WebMentionPlugin {
    *
    * @return array of results including HTTP headers
    */
-  public static function send_webmention($source, $target, $post_ID) {
+  public static function send_webmention($source, $target, $post_ID = null) {
     // stop selfpings
     if ($source == $target) {
       return false;
